@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	text-align: center;
+	margin: 2rem;
+	font-family: "Roboto";
+	font-weight: 100;
+	font-size: 2em;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	background-color: black;
+	color: whitesmoke;
+	width: 400px;
+	height: 600px;
+	margin-top: 4rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"display display display display"
+		"clear negative percent divide"
+		"seven eight nine multiply"
+		"four five six subtract"
+		"one two three add"
+		"zero zero dot equal";
+
+	border-left: 1px solid black;
+}
+
+.keys {
+	background-color: lightgrey;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	cursor: pointer;
+}
+
+.operator {
+	background-color: orange;
+	color: whitesmoke;
+}
+.special {
+	background-color: grey;
+}
+
+#display {
+	grid-area: display;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	font-size: 4rem;
+	padding: 0 1rem;
+}
+#nine {
+	grid-area: nine;
+}
+#eight {
+	grid-area: eight;
+}
+#seven {
+	grid-area: seven;
+}
+#six {
+	grid-area: six;
+}
+#five {
+	grid-area: five;
+}
+#four {
+	grid-area: four;
+}
+#three {
+	grid-area: three;
+}
+#two {
+	grid-area: two;
+}
+#one {
+	grid-area: one;
+}
+#zero {
+	grid-area: zero;
+}
+#dot {
+	grid-area: dot;
+}
+#divide {
+	grid-area: divide;
+}
+#multiply {
+	grid-area: multiply;
+}
+#subtract {
+	grid-area: subtract;
+}
+#add {
+	grid-area: add;
+}
+#equal {
+	grid-area: equal;
+}
+#clear {
+	grid-area: clear;
+}
+#negative {
+	grid-area: negative;
+}
+#percent {
+	grid-area: percent;
+}
